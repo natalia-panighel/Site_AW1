@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Natália Panighel</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+      <meta name="description" content=""/>
+      <meta name="keywords" content=""/>
+      <link id="theme" rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" href="css/skel-noscript.css" />
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <!-- Script -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/skel.min.js"></script>
+      <script src="js/skel-panels.min.js"></script>
+      <script src="js/init.js"></script>
+   </head>
+   <body class="homepage">
+      <!-- Header -->
+       <div id="header-wrapper">
+         <div id="header" class="container">
+            <div id="logo">
+               <h1><a href="index.html">Natália Panighel</a></h1>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a class="ativo" href="index.html">Início</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="curriculo.html">Currículo</a></li> 
+                    <li><a href="contato.html">Contato</a></li>
+                   <li>
+                        <label class="switch">
+                            <input type="checkbox" onclick="toggleTheme()">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+               </ul>
+            </nav>
+         </div>
+         <div id="banner">
+            <div class="container">
+               <div class="row">
+                  <section class="12u">
+                     <header>
+                        <h2 class= "titulo-header" >Sobre mim</h2>
+                        <span class="byline negrito">Estudante do curso Técnico de Informática integrado ao Ensino Médio pelo Instituto Federal de Educação, Ciência e Tecnologia São Paulo, com previsão de formação para Dezembro de 2021. Responsável, focada, bom trabalho em equipe, dedicada, e facilidade em aprender. </span>
+                        <img id="minhafoto" src="images/eu.JPG" class="side fotinho_sem_mouse" alt="foto"/>
+                     </header>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container" id="featured-wrapper">
+            <div class="row">
+               <section class="col">
+                  <header>
+                     <h2>Portfólio</h2>
+                  </header>
+                  <span class="pennant"><img src="https://img.icons8.com/nolan/96/open-book.png"/></span>
+                  <p>Coleção de todos os meus trabalhos.</p>
+                  <a href="portfolio.html" class="button button-style1">Leia mais</a>
+               </section>
+               <section class="col pl-0">
+                  <header>
+                     <h2>Currículo</h2>
+                  </header>
+                  <span class="pennant"><img src="https://img.icons8.com/nolan/96/contract-job.png"/></span>
+                  <p>Saiba mais sobre mim</p>
+                  <a href="curriculo.html" class="button button-style1">Leia mais</a>
+               </section>
+               <section class="col pl-0">
+                  <header>
+                     <h2>Contato</h2>
+                  </header>
+                  <span class="pennant"><img src="https://img.icons8.com/nolan/96/apple-phone.png"/></span>
+                  <p>Entre em contato comigo.</p>
+                  <a href="contato.html" class="button button-style1">Leia mais</a>
+               </section>
+            </div>
+         </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
+<script>
+  jQuery(document).ready(function($){
+    $('#minhafoto').mouseenter(function(){
+      $(this).addClass('fotinho_com_mouse');
+      $(this).removeClass('fotinho_sem_mouse');
+    });
+    $('#minhafoto').mouseleave(function(){
+      $(this).removeClass('fotinho_com_mouse');
+      $(this).addClass('fotinho_sem_mouse');
+    });
+  })
+  </script>
+<footer>
+</footer>
+
+
